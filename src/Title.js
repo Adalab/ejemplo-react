@@ -10,12 +10,18 @@ import React from 'react';
 */
 
 class Title extends React.Component {
+
+  // Creamos un método de la clase para hacer el código más limpio, luego
+  // lo utilizaremos en el método render. Usamos || para definir un valor por defecto
+  printText() {
+    return this.props.text || "Ha surgido un error. No se ha recibido ningún mensaje"
+  }
+
   render() {
     return (
-      <h1 className="title">{this.props.text}</h1>
+      <h1 className="title">{this.printText()}</h1>
     );
   }
 }
 
-// Al igual que hicimos con App, debemos exportar la clase Title que hemos creado
 export default Title;
