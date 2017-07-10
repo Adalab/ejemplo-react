@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <img src={brand} className="brand" alt="Logotipo de Adalab" />
-        <Title />
+        <Title kind="subtitle" />
       </div>
     );
   }

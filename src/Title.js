@@ -11,16 +11,24 @@ import React from 'react';
 
 class Title extends React.Component {
 
-  // Creamos un método de la clase para hacer el código más limpio, luego
-  // lo utilizaremos en el método render. Usamos || para definir un valor por defecto
   printText() {
-    return this.props.text || "Ha surgido un error. No se ha recibido ningún mensaje"
+    return this.props.text || "Ha surgido un error. No se ha recibido ningún mensaje";
+  }
+
+  // Creamos un método para que según la propiedad kind que se le pase muestre una
+  // etiqueta u otra
+  renderTitleTag() {
+    if (this.props.kind === "title") {
+      return <h1 className="title">{this.printText()}</h1>;
+    } else if (this.props.kind === "subtitle") {
+      return <h2 className="title">{this.printText()}</h2>;
+    } else {
+      return <h6 className="title">{this.printText()}</h6>;
+    }
   }
 
   render() {
-    return (
-      <h1 className="title">{this.printText()}</h1>
-    );
+    return this.renderTitleTag();
   }
 }
 
