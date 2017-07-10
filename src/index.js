@@ -1,11 +1,10 @@
-// Librería de React para poder utilizar JSX y los componentes de React
 import React from 'react';
-
-// Librería de React que permite meter el JSX y toda la lógica de React directamente en una web
 import ReactDOM from 'react-dom';
 
-// `<p>Hello world!</p>` Html puro sin comillas y funciona bien 👏
+// Importando estilos desde JavaScript 🤔
+// Los estilos se compilan con Koala como hemos hecho hasta ahora
+import './stylesheets/index.css';
 
-// Con el segundo parámetro básicamente le decimos dentro de qué etiqueta queremos
-// meter todo lo que se genere con React
-ReactDOM.render(<p>Hello world!</p>, document.getElementById('root'));
+// Metemos el estilo como lo haríamos eh HTML pero en vez de poner class usamos
+// className
+ReactDOM.render(<p className="greeting">Hello world!</p>, document.getElementById('root'));
