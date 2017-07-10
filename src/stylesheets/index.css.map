@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,SAAU;EACR,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,SAAS",
-"sources": ["_greeting.scss"],
+"mappings": "AAAA,MAAO;EACL,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,IAAI;;AAGb,MAAO;EACL,WAAW,EAAE,UAAU;EACvB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,MAAM",
+"sources": ["_brand.scss"],
 "names": [],
 "file": "index.css"
 }
